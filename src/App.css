@@ -17,9 +17,13 @@
 }
 /* globals */
 body {
-  padding-top: 66px;
+  padding-top: 150px;
   color: var(--mainBlack);
-  background: var(--mainWhite);
+/*  background: var(--mainWhite);*/
+background-image: url("./images/defaultBcg.jpeg");
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
@@ -155,11 +159,21 @@ h6 {
   }
 }
 /* end of navbar */
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrap:{
+  flex: 1;
+}
 /* Hero */
 .defaultHero{
-  min-height: calc(100vh - 66px);
+  /*min-height: calc(100vh - 66px);*/
     background-image: url("./images/defaultBcg.jpeg");
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -303,6 +317,7 @@ h6 {
   }
 }
 /* end pf featured rooms */
+
 /* room */
 .room {
   box-shadow: var(--lightShadow);

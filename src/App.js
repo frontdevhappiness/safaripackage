@@ -9,6 +9,12 @@ import Error  from "./pages/Error";
 import {Switch, Route} from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+
+library.add(fab, fas);
 
 function App() {
   return(
@@ -20,6 +26,7 @@ function App() {
               <Route exact path="/rooms/:cool" component={SingleRoom} />
               <Route component={Error} />
     </switch>
+    <Footer />
     </>
 );
 }

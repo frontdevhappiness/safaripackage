@@ -1,0 +1,8 @@
+.icon {
+  color: #0040ff;
+  margin-left: 20px;
+}
+
+.icon:hover {
+  color: tomato;
+}
